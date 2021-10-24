@@ -1,20 +1,35 @@
+<!doctype html>
 <style>
-body {
-  margin-left: auto;
-  margin-right: auto;
+html,body {
+  height: 100%;
+  width: 100%;
 }
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 .word {
-  font-family: Ubuntu Mono;
+  font-family: 'Ubuntu Mono', monospace;
   font-size: 10vw;
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  user-select: none;
+}
+.english {
+  color: gray;
 }
 </style>
 <body>
-  <div id="word" class="word"></div>
+  <div class="container">
+    <p id="swahili" class="word"></p>
+    <p id="english" class="word english"></p>
+  </div>
 </body>
 <script src="words.js"></script>
 <script src="flashwords.js"></script>
