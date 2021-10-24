@@ -15,7 +15,7 @@ we.style.visibility = 'hidden';
 we.textContent = english;
 ws.textContent = swahili;
 
-document.body.onclick = function () {
+document.documentElement.onclick = function () {
   if (we.style.visibility == 'hidden') {
     we.style.visibility = 'visible';
     return;
