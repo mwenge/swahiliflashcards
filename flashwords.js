@@ -24,4 +24,10 @@ document.documentElement.onclick = function () {
   we.style.visibility = 'hidden';
   we.textContent = english;
   ws.textContent = swahili;
+
+  if (english.length > 20) {
+    we.style.fontSize = '7vw';
+  } else {
+    we.style.fontSize = '10vw';
+  }
 };
